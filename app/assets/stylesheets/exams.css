@@ -1,0 +1,171 @@
+.wrapper {
+  display: flex;
+}
+
+/***** サイドバー *****/
+
+.side-bar {
+  background-color: turquoise;
+  width: 300px;
+  height: 100vh;
+}
+
+.side-bar-header {
+  height: 100px;
+  display: block;
+  text-align: center;
+  background-color: turquoise;
+}
+
+.app-name {
+  font-size: 30px;
+  color: #fafafa;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.user-nav {
+  height: 40px;
+}
+
+.user-nav span {
+  width: 150px;
+  font-size: 1em;
+  cursor: pointer;
+  position: relative;
+}
+
+.user-nav span::after {
+  content: '▼';
+  font-size: .7em;
+  margin-left: -4px;
+}
+
+.user-nav span:hover ul {
+  color: darkblue;
+  display: block;
+}
+
+.user-nav ul {
+  display: none;
+  position: absolute;
+  top: 46px;
+  right: 0;
+  border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-nav ul li {
+  background-color: #f0f0f0;
+}
+
+.user-nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-align: left;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.subjects {
+  background-color: paleturquoise;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+}
+
+.create-note {
+  height: 60px;
+}
+
+.create-note a {
+  line-height: 60px;
+  font-size: 15px;
+  color: darkblue;
+  border: 1px solid darkblue;
+  border-radius: 10px;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.notes {
+  height: calc(100vh - 100px - 60px);
+  overflow: scroll;
+}
+
+.note {
+  padding: 20px 0 40px;
+}
+
+.subject-name a {
+  text-decoration: none;
+  font-size: 15px;
+  color: darkblue;
+}
+
+/***** 投稿一覧画面 *****/
+
+.main {
+  background-color: #ffffff;
+  width: calc(100vw - 300px);
+}
+
+.main-header {
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  color: #333;
+  font-size: 24px;
+  margin-top: 36px;
+}
+
+.header-btn {
+  margin-top: 40px;
+}
+
+.header-btn a {
+  color: darkred;
+  border: 1px solid darkred;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.entries {
+  background-color: #fafafa;
+  height: calc(100vh - 100px);
+  padding: 46px 40px 0;
+  overflow: scroll;
+}
+
+.entry {
+  margin: 10px 0 0 0;
+}
+
+.upper-entry {
+  display: flex;
+}
+
+.entry-title {
+  color: #434a54;
+  font-size: 16px;
+}
+
+.entry-date {
+  color: #999;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.lower-entry {
+  margin-top: 10px;
+}
+
+.entry-hospital {
+  color: #434a54;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
