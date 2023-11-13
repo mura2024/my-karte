@@ -3,11 +3,11 @@
     MY カルテ
   </div>
   <div class="user-nav">
-    <span><a href="#">Tom</a>
+    <span><%= current_user.name %>
       <ul class="user__info">
         <li>
-          <%# <%= link_to "マイページ", #,  %> %>
-          <%# <%= link_to "ログアウト", #, method: %> %>
+          <%= link_to "アカウント編集", edit_user_path(current_user)  %>
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
         </li>
       </ul>
     </span>
