@@ -54,7 +54,6 @@
 }
 .account-page .field .field-input-birth {
   display: flex;
-  flex-wrap: wrap;
 }
 .account-page .field .field-input-birth select {
   width: 75px;
@@ -64,7 +63,6 @@
   cursor: pointer;
 }
 .account-page .field .field-input-birth p {
-  line-height: 60px;
   padding: 0 5px;
   font-size: 12px;
 }
@@ -89,10 +87,11 @@
   color: #d65f4c;
   font-weight: 400;
 }
-.account-page .field-input .field_with_errors {
+.account-page .field-input .field_with_errors, .field-input-birth .field_with_errors {
   position: relative;
+  display: flex;
 }
-.account-page .field-input .field_with_errors:after {
+.account-page .field-input .field_with_errors:after, .field-input-birth .field_with_errors:after {
   content: "";
   display: block;
   position: absolute;
@@ -103,24 +102,22 @@
   background-color: #d65f4c;
 }
 
-#error_explanation {
+.error_explanation {
   margin: 20px 0;
   padding: 20px 30px;
   border: 1px solid #ddd;
   border-radius: 2px;
 }
-#error_explanation h2 {
-  margin-bottom: 10px;
-  color: #d65f4c;
-  font-size: 14px;
-}
-#error_explanation ul {
+.error_explanation ul {
   margin: 0;
   padding-left: 17px;
-  list-style: square;
+  list-style: circle;
 }
-#error_explanation li {
-  margin: 0;
-  padding: 0;
+.error_explanation li {
   font-size: 13px;
+  color: #d65f4c;
+}
+.login-flash-message{
+  text-align: center;
+  color: #d65f4c;
 }
