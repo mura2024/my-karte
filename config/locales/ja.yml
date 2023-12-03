@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        name: 名前
+        birthday: 生年月日
+      # tweet:
+        # text: テキスト
+        # image: 画像

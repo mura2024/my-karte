@@ -26,19 +26,25 @@
 
 .user-nav {
   height: 40px;
+  position: relative;
+  right: 0;
 }
 
 .user-nav span {
+  display: block;
+  margin-left: 70px;
   width: 150px;
+  height: 40px;
   font-size: 1em;
   cursor: pointer;
   position: relative;
+  color: darkblue;
 }
 
-.user-nav span::after {
+.user-nav span:after {
   content: '▼';
   font-size: .7em;
-  margin-left: -4px;
+  margin-left: -2px;
 }
 
 .user-nav span:hover ul {
@@ -49,8 +55,9 @@
 .user-nav ul {
   display: none;
   position: absolute;
-  top: 46px;
+  top: 10px;
   right: 0;
+  padding-left: 0;
   border-left: 1px solid #d8d8d8;
   border-right: 1px solid #d8d8d8;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
@@ -58,6 +65,7 @@
 
 .user-nav ul li {
   background-color: #f0f0f0;
+  list-style: none;
 }
 
 .user-nav ul li a {
@@ -65,6 +73,7 @@
   padding: 10px 20px;
   text-align: left;
   border-bottom: 1px solid #d8d8d8;
+  font-size: 13px;
 }
 
 .subjects {
