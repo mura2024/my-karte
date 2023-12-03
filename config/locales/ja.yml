@@ -3,7 +3,7 @@ ja:
     attributes:
       user:
         name: 名前
-        birthday: 誕生日
+        birthday: 生年月日
       # tweet:
         # text: テキスト
         # image: 画像
