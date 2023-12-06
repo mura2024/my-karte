@@ -9,4 +9,6 @@ class User < ApplicationRecord
     validates :birthday
   end
 
+  has_many :medicals
+  has_many :exams
 end
