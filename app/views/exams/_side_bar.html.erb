@@ -16,20 +16,17 @@
 
 <div class="subjects">
   <div class="create-note">
-    <a href="#">ノート作成</a>
+    <%= link_to "ノート作成", new_medical_path %>
   </div>
-  <div class="notes">
-    <div class="note">
-      <div class="subject-name">
-        <a href="#">診療科1</a>
-      </div>
-    </div>
 
-    <div class="note">
-      <div class="subject-name">
-        <a href="#">診療科2</a>
+  <div class="notes">
+    <% current_user.medicals.each do |medical| %>
+      <div class="note">
+        <div class="subject-name">
+          <a href="#"><%= medical.subject %></a>
+        </div>
       </div>
-    </div>
+    <% end %>
     
   </div>
 </div>

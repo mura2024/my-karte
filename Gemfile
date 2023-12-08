@@ -84,3 +84,4 @@ end
 
 gem 'devise'
 gem 'rails-i18n'
+gem 'pry-rails'
