@@ -8,7 +8,7 @@ class MedicalsController < ApplicationController
     if @medical.save
       redirect_to root_path
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
