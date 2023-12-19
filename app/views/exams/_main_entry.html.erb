@@ -1,12 +1,12 @@
 <div class="main-header">
   <div class="left-header">
     <div class="header-title">
-      診療科1
+      <%= @medical.subject %>
     </div>
   </div>
   <div class="right-header">
     <div class="header-btn">
-      <a href="#">投稿</a>
+      <%= link_to "記録", new_medical_exam_path(@medical) %>
     </div>
   </div>
 </div>
@@ -43,4 +43,6 @@
       </div>
     </div>
   </div>
+
+  
 </div>
