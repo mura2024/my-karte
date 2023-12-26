@@ -15,10 +15,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_08_124538) do
     t.string "title", null: false
     t.string "hospital", null: false
     t.date "exam_date", null: false
-    t.text "comment"
+    t.text "comment", null: false
     t.bigint "user_id", null: false
+    t.bigint "medical_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["medical_id"], name: "index_exams_on_medical_id"
     t.index ["user_id"], name: "index_exams_on_user_id"
   end
 
@@ -44,6 +46,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_08_124538) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "exams", "medicals"
   add_foreign_key "exams", "users"
   add_foreign_key "medicals", "users"
 end

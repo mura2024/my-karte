@@ -2,8 +2,7 @@ class ExamsController < ApplicationController
   before_action :set_medical
 
   def index
-    @exams = @medical.exams
-    @exams = @medical.exams.includes(:user)
+    @exams = @medical.exams.includes(:user).order("exam_date DESC")
   end
 
   def new
@@ -13,10 +12,11 @@ class ExamsController < ApplicationController
   def create
     @exam = @medical.exams.new(exam_params)
     if @exam.save
-      redirect_to medical_path(@medical), notice: 'Record was successfully created.'
+      redirect_to medical_exams_path(@medical), notice: 'Record was successfully created.'
     else
       @exams = @medical.exams.includes(:user)
-      render :new
+      render :new, status: :unprocessable_entity
+      # バリデーションエラー出力
     end
   end
 
