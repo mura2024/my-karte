@@ -1,0 +1,40 @@
+<div class="exam-show">
+  <div class="show-head">
+    <div class="show-head_left">
+      <h3><%= @exam.title %></h3>
+    </div>
+    <div class="show-head_right">
+      <div class="show-edit_btn">
+        <a> 編集</a>
+      </div>
+      <div class="show-destroy">
+        <a>削除</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-box">
+    <div class="img-box">
+      <div class="exam-img">
+        <%= image_tag @exam.image if @exam.image.attached? %>
+      </div>
+    </div>
+
+    <div class="show-explain-box">
+      <div class="detail-hos"><%= @exam.hospital %></div>
+      <div class="detail-date">
+        <div class="show-date"><%= @exam.exam_date %></div>
+        <div class="date-cal">
+          
+        </div>
+      </div>
+      <div class="detail-comment"><%= @exam.comment %></div>
+    </div>
+  </div>
+
+  <div class="show-foot">
+    <div class="back-btn">
+      <a>戻る</a>
+    </div>
+  </div>
+</div>

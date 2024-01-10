@@ -182,7 +182,7 @@
 /***** 新規投稿画面 *****/
 h3 {
   letter-spacing: 2px;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
 }
@@ -263,4 +263,84 @@ h3 {
   background-color: #434a54;
   height: 80px;
   width: 100%;
+}
+
+/***** 詳細画面 *****/
+.exam-show {
+  width: 100vw;
+}
+.show-head {
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.show-head_right {
+  display: flex;
+  align-items: center;
+}
+.show-edit_btn {
+  background-color: darkred;
+  color: #fff;
+  border: 1px solid darkred;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 20px;
+}
+.show-destroy {
+  background-color: lightgray;
+  color: black;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 20px;
+  margin-left: 40px;
+}
+.show-box {
+  background-color: #fafafa;
+  padding: 10vh 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.exam-img {
+  height: 50vh;
+  width: 60vw;
+  min-height: 500px;
+  background-color: rgb(205, 202, 202);
+  object-fit: contain;
+}
+.show-explain-box {
+  margin: 40px 0px;
+}
+.detail-hos {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.detail-date {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.detail-comment {
+  font-size: 18px;
+  overflow-wrap: anywhere;
+}
+.show-foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  margin: 5vh 0;
+}
+.back-btn {
+  width: 100px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
 }

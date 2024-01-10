@@ -1,7 +1,7 @@
 <div class="entry">
   <div class="upper-entry">
     <div class="entry-title">
-      <%= exam.title %>
+      <%= link_to exam.title ,medical_exam_path(@medical,exam) %>
     </div>
     <div class="entry-date">
       <%= exam.exam_date %>

@@ -20,6 +20,10 @@ class ExamsController < ApplicationController
     end
   end
 
+  def show
+    @exam = @medical.exams.find(params[:id])
+  end
+
   private
 
   def set_medical
