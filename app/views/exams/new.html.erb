@@ -1,0 +1,52 @@
+<div class='exam-form'>
+  <h3>新規診療記録</h3>
+
+    <%= form_with model: [@medical, @exam], local: true do |f| %>
+
+    <%= render "devise/shared/error_messages", model: f.object %>
+
+    <div class='exam-form__field'>
+      <div class='exam-form__field--left'>
+        <%= f.label :hospital, :病院名, class: 'exam-form__label' %>
+      </div>
+      <div class='exam-form__field--right'>
+        <%= f.text_field :hospital, class: 'exam-form__input', placeholder: '受診した病院名' %>
+      </div>
+
+      <div class='exam-form__field--left'>
+        <%= f.label :exam_date, :診察日, class: 'exam-form__label' %>
+      </div>
+      <div class='exam-form__field--right'>
+        <%= f.date_field :exam_date, class: 'exam-form__input-date' %> 
+      </div>
+
+      <div class='exam-form__field--left'>
+        <%= f.label :title, :タイトル, class: 'exam-form__label' %>
+      </div>
+      <div class='exam-form__field--right'>
+        <%= f.text_field :title, class: 'exam-form__input', placeholder: '記録のタイトル' %>
+      </div>
+
+      <div class='exam-form__field--left'>
+        <%= f.label :comment, :コメント, class: 'exam-form__label' %>
+      </div>
+      <div class='exam-form__field--right'>
+        <%= f.text_area :comment, class: 'exam-form__input', placeholder: '受診の経緯、結果、所見等', rows: '10' %>
+      </div>
+
+      <div class='exam-form__field--left'>
+        <%= f.label :image, :画像, class: 'exam-form__label-image' %>
+      </div>
+      <div class='exam-form__field--right'>
+        <%= f.file_field :image, class: 'exam-form__image' %>
+      </div>
+
+      <div class='exam-form__field--left'>
+      </div>
+      <div class='exam-form__field--right'>
+        <%= f.submit '保存', class: 'exam-form__action-btn' %>
+      </div>
+
+    </div>
+    <% end %>
+</div>

@@ -178,3 +178,169 @@
   font-size: 14px;
   margin-bottom: 40px;
 }
+
+/***** 新規投稿画面 *****/
+h3 {
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.exam-form {
+  width: 980px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.exam-form__errors {
+  margin: 30px 0;
+  padding: 20px 40px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  text-align: center;
+}
+.exam-form__field {
+  margin-top: 30px;
+}
+.exam-form__field:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.exam-form__field--left {
+  float: left;
+  width: 20%;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.exam-form__field--right {
+  float: right;
+  width: 80%;
+  padding-right: 50px;
+  margin-bottom: 5px;
+}
+.exam-form__label {
+  display: block;
+  line-height: 55px;
+  font-weight: bold;
+  text-align: right;
+}
+.exam-form__label-image {
+  display: block;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 290px;
+}
+.exam-form__input {
+  float: left;
+  width: 100%;
+  line-height: 30px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+.exam-form__input-date {
+  float: left;
+  width: 200px;
+  line-height: 30px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+.exam-form__action-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  color: #fff;
+  background-color: #38aef0;
+  border: 0;
+  border-radius: 2px;
+  margin-left: 300px;
+}
+
+.top-header {
+  background-color: #434a54;
+  height: 80px;
+  width: 100%;
+}
+
+/***** 詳細画面 *****/
+.exam-show {
+  width: 100vw;
+}
+.show-head {
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.show-head_right {
+  display: flex;
+  align-items: center;
+}
+.show-edit_btn {
+  background-color: darkred;
+  color: #fff;
+  border: 1px solid darkred;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 20px;
+}
+.show-destroy {
+  background-color: lightgray;
+  color: black;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 20px;
+  margin-left: 40px;
+}
+.show-box {
+  background-color: #fafafa;
+  padding: 10vh 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.exam-img {
+  height: 50vh;
+  width: 60vw;
+  min-height: 500px;
+  background-color: rgb(205, 202, 202);
+  object-fit: contain;
+}
+.show-explain-box {
+  margin: 40px 0px;
+}
+.detail-hos {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.detail-date {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.detail-comment {
+  font-size: 18px;
+  overflow-wrap: anywhere;
+}
+.show-foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  margin: 5vh 0;
+}
+.back-btn {
+  width: 100px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+}

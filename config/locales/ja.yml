@@ -6,3 +6,8 @@ ja:
         birthday: 生年月日
       medical:
         subject: 診療科名
+      exam:
+        title: タイトル
+        hospital: 病院名
+        exam_date: 診察日
+        comment: コメント

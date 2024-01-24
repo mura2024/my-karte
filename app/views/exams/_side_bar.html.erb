@@ -23,7 +23,7 @@
     <% current_user.medicals.each do |medical| %>
       <div class="note">
         <div class="subject-name">
-          <a href="#"><%= medical.subject %></a>
+          <%= link_to medical.subject, medical_exams_path(medical) %>
         </div>
       </div>
     <% end %>
